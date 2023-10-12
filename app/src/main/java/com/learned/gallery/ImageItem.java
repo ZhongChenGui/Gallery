@@ -27,9 +27,9 @@ public class ImageItem extends LinearLayout {
 
     public ImageItem(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.setFocusable(true);
-        this.setClickable(true);
-        this.setFocusableInTouchMode(true);
+        this.setFocusable(false);
+        this.setClickable(false);
+        this.setFocusableInTouchMode(false);
         this.setGravity(Gravity.CENTER_VERTICAL);
         LayoutInflater.from(context).inflate(R.layout.item_picture, this, true);
         mImageView = this.findViewById(R.id.imageview);
